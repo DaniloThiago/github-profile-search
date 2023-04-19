@@ -1,7 +1,7 @@
-#Aplicação de Busca de Perfis do GitHub - Documentação (Estudo)
+# Aplicação de Busca de Perfis do GitHub - Documentação (Estudo)
 Esta é uma aplicação de busca de perfis de usuários do GitHub desenvolvida utilizando o framework Angular, com duas rotas principais: "home" e "perfil". A aplicação é responsiva e foi testada em três resoluções diferentes: Notebook/Desktop (resoluções maiores que 1300px de largura), tablet iPad e celular iPhone 5, utilizando o Chrome Dev Tools para simulação desses dispositivos.
 
-##Pré-requisitos
+## Pré-requisitos
 Antes de instalar e executar a aplicação, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 * Node.js (versão 14.17.0 ou superior)
@@ -29,7 +29,7 @@ ng build --prod
 ```
 Isso irá criar uma pasta `dist` na raiz do projeto, contendo os arquivos estáticos da aplicação prontos para serem implantados em um servidor de produção.
 
-##Estrutura do Projeto
+## Estrutura do Projeto
 A estrutura do projeto é organizada da seguinte forma:
 
 ```bash
@@ -47,7 +47,7 @@ github--profile-search/
   |- ...
 ```
 
-##Libs e Frameworks Utilizados
+## Libs e Frameworks Utilizados
 Nesta aplicação, utilizei o seguinte:
 * Angular: um framework de desenvolvimento de aplicativos web desenvolvido pelo Google.
 * RxJS: uma biblioteca de programação reativa para manipulação assíncrona de dados.
