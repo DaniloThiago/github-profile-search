@@ -1,0 +1,7 @@
+<div>
+  <h1>Busca de Perfil do GitHub</h1>
+  <input [(ngModel)]="username" placeholder="Digite o username do GitHub">
+  <button (click)="searchProfile()">Buscar</button>
+</div>
+
+<app-profile *ngIf="userProfile" [userProfile]="userProfile"></app-profile>

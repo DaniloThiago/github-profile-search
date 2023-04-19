@@ -1,0 +1,23 @@
+<!-- profile.component.html -->
+<div *ngIf="userProfile">
+  <h2>{{ userProfile.name }}</h2>
+  <img [src]="userProfile.avatar_url" alt="Foto de perfil do usuário">
+  <p>{{ userProfile.bio }}</p>
+  <p>Repositórios:</p>
+  <ul>
+    <li *ngFor="let repo of userProfile.repos | orderBy:'stargazers_count'">
+      <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+    </li>
+  </ul>
+  <p *ngIf="userProfile.blog">
+    Site: <a [href]="userProfile.blog" target="_blank">{{ userProfile.blog }}</a>
+    <button (click)="openWebsite()">Abrir site</button>
+  </p>
+  <p *ngIf="userProfile.twitter_username">
+    Twitter: <a [href]="'https://twitter.com/' + userProfile.twitter_username" target="_blank">{{ userProfile.twitter_username }}</a>
+    <button (click)="openTwitter()">Abrir Twitter</button>
+  </p>
+  <p>
+    <a [routerLink]="['/']">Voltar</a>
+  </p>
+</div>
